@@ -1,8 +1,9 @@
 from django.db import models
-
 from django.urls import reverse
 from django.db.models import UniqueConstraint
 from django.db.models.functions import Lower
+from django.contrib.auth.models import User
+from datetime import date
 
 class Genre(models.Model):
     name = models.CharField(
@@ -81,7 +82,6 @@ class Book(models.Model):
 
 import uuid
 from datetime import date
-
 from django.conf import settings
 
 
